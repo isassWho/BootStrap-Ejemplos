@@ -1,0 +1,77 @@
+
+.entrada{
+    background: rgb(218, 218, 218);    
+}
+
+div[class|="col"]{
+    border: 1px solid rgb(34, 34, 34);
+    color: white;
+    background: rgb(143, 7, 255);
+    border-radius: 4px;
+    text-align: center;
+    height: 30px;
+}
+
+
+/* MENU */
+.menu{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 216, 216);
+    background: rgb(36, 36, 36);
+}
+
+/* Dispositivos extra chicos*/
+@media (max-width: 576px){
+    .menu::after{
+        content: "Extra Small";
+    }
+    .menu-fluid::before{
+        content: "Extra Small";
+    }
+}
+
+/* Dispositivos chicos*/
+@media (min-width: 576px){
+    .menu::after{
+        content: "Small";
+    }
+    .menu-fluid::before{
+        content: "Small";
+    }
+}
+
+/* Dispositivos medianos */
+@media (min-width: 768px){
+    .menu::after{
+        content: "Medium";
+    }
+    .menu-fluid::before{
+        content: "Medium";
+    }
+}
+
+/* Dispositivos grandes*/
+@media (min-width: 992px){
+    .menu::after{
+        content: "Large";
+    }
+    .menu-fluid::before{
+        content: "Large";
+    }
+}
+
+/* Dispositivos extra grandes*/
+@media (min-width: 1200px){
+    .menu::after{
+        content: "Extra Large";
+    }
+    .menu-fluid::before{
+        content: "Extra Large";
+    }
+}
+
+
+

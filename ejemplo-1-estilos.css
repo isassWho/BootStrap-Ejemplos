@@ -1,0 +1,83 @@
+
+/*Estilos Textos para ambos ejemplos*/
+.entrada{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*Estilos de Contenedor para ambos ejemplos*/
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{
+    height: 300px;
+    background: rgb(143, 7, 255);
+    border-radius: 10px;
+}
+
+
+/*Ejemplo 3
+Estilos de Contenedor para ambos ejemplos*/
+.container-sm, .container-md, .container-lg, .container-xl{
+    font-size: 25px;
+    height: 100px;
+    background: rgb(143, 7, 255);
+    border-radius: 10px;
+}
+
+
+/* Dispositivos extra chicos*/
+@media (max-width: 576px){
+    .container::after{
+        content: "Extra Small";
+    }
+    .container-fluid::before{
+        content: "Extra Small";
+    }
+}
+
+/* Dispositivos chicos*/
+@media (min-width: 576px){
+    .container::after{
+        content: "Small";
+    }
+    .container-fluid::before{
+        content: "Small";
+    }
+}
+
+/* Dispositivos medianos */
+@media (min-width: 768px){
+    .container::after{
+        content: "Medium";
+    }
+    .container-fluid::before{
+        content: "Medium";
+    }
+}
+
+/* Dispositivos grandes*/
+@media (min-width: 992px){
+    .container::after{
+        content: "Large";
+    }
+    .container-fluid::before{
+        content: "Large";
+    }
+}
+
+/* Dispositivos extra grandes*/
+@media (min-width: 1200px){
+    .container::after{
+        content: "Extra Large";
+    }
+    .container-fluid::before{
+        content: "Extra Large";
+    }
+}
+
+
+
+
+
+
