@@ -28,17 +28,11 @@ div[class|="col"]{
     .menu::after{
         content: "Extra Small";
     }
-    .menu-fluid::before{
-        content: "Extra Small";
-    }
 }
 
 /* Dispositivos chicos*/
 @media (min-width: 576px){
     .menu::after{
-        content: "Small";
-    }
-    .menu-fluid::before{
         content: "Small";
     }
 }
@@ -48,9 +42,6 @@ div[class|="col"]{
     .menu::after{
         content: "Medium";
     }
-    .menu-fluid::before{
-        content: "Medium";
-    }
 }
 
 /* Dispositivos grandes*/
@@ -58,17 +49,11 @@ div[class|="col"]{
     .menu::after{
         content: "Large";
     }
-    .menu-fluid::before{
-        content: "Large";
-    }
 }
 
 /* Dispositivos extra grandes*/
 @media (min-width: 1200px){
     .menu::after{
-        content: "Extra Large";
-    }
-    .menu-fluid::before{
         content: "Extra Large";
     }
 }

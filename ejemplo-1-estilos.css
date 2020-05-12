@@ -1,5 +1,5 @@
 
-/*Estilos Textos para ambos ejemplos*/
+/*Estilos Textos para los 3  ejemplos*/
 .entrada{
     font-size: 50px;
     display: flex;
@@ -8,16 +8,15 @@
     color: white;
 }
 
-/*Estilos de Contenedor para ambos ejemplos*/
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{
+/*Estilos de Contenedor para ejemplos 1 y 2 */
+.container, .container-fluid{
     height: 300px;
     background: rgb(143, 7, 255);
     border-radius: 10px;
 }
 
 
-/*Ejemplo 3
-Estilos de Contenedor para ambos ejemplos*/
+/*Estilos de contenedor ejemplo 3*/
 .container-sm, .container-md, .container-lg, .container-xl{
     font-size: 25px;
     height: 100px;
@@ -25,12 +24,13 @@ Estilos de Contenedor para ambos ejemplos*/
     border-radius: 10px;
 }
 
-
 /* Dispositivos extra chicos*/
 @media (max-width: 576px){
+    /*Ejemplo 1*/
     .container::after{
         content: "Extra Small";
     }
+    /*Ejemplo 2*/
     .container-fluid::before{
         content: "Extra Small";
     }
@@ -38,9 +38,11 @@ Estilos de Contenedor para ambos ejemplos*/
 
 /* Dispositivos chicos*/
 @media (min-width: 576px){
+    /*Ejemplo 1*/
     .container::after{
         content: "Small";
     }
+    /*Ejemplo 2*/
     .container-fluid::before{
         content: "Small";
     }
@@ -48,9 +50,11 @@ Estilos de Contenedor para ambos ejemplos*/
 
 /* Dispositivos medianos */
 @media (min-width: 768px){
+    /*Ejemplo 1*/
     .container::after{
         content: "Medium";
     }
+    /*Ejemplo 2*/
     .container-fluid::before{
         content: "Medium";
     }
@@ -58,9 +62,11 @@ Estilos de Contenedor para ambos ejemplos*/
 
 /* Dispositivos grandes*/
 @media (min-width: 992px){
+    /*Ejemplo 1*/
     .container::after{
         content: "Large";
     }
+    /*Ejemplo 2*/
     .container-fluid::before{
         content: "Large";
     }
@@ -68,9 +74,11 @@ Estilos de Contenedor para ambos ejemplos*/
 
 /* Dispositivos extra grandes*/
 @media (min-width: 1200px){
+    /*Ejemplo 1*/
     .container::after{
         content: "Extra Large";
     }
+    /*Ejemplo 2*/
     .container-fluid::before{
         content: "Extra Large";
     }

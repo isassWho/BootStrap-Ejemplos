@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,33 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-    <title>Ejemplo 2 Filas</title>
+    <title>Filas</title>
 </head>
 
 <body>
 
     <br>
+    <!--Barra superior que nos muestra el tamaño-->
     <div class="container-fluid menu sticky-top">
         <!-- Contenido -->
     </div>
     <br>
     <br>
+
     <div class="container entrada">
         <!--Ejemplo 1-->
         <h5>Ejemplo 1</h5>
         <div class="row">
-            <div class="col-6"><p>col-6</p></div>
+            <div class="col-6">col-6</div>
             <div class="col-6">col-6</div>
         </div>
+
         <hr>
+
         <!--Ejemplo 2-->
         <h5>Ejemplo 2</h5>
         <div class="row">
             <div class="col">col-6</div>
             <div class="col">col-6</div>
         </div>
+
         <hr>
+
         <!--Ejemplo 3-->
         <h5>Ejemplo 3</h5>
         <div class="row">
@@ -43,7 +49,9 @@
             <div class="col-7">col-7</div>
 
         </div>
+
         <hr>
+
         <!--Ejemplo 4-->
         <h5>Ejemplo 4</h5>
         <div class="row">
@@ -62,7 +70,9 @@
             <div class="col">col-13</div>
             <div class="col">col-14</div>
         </div>
+
         <hr>
+
         <!--Ejemplo 5-->
         <h5>Ejemplo 5</h5>
         <div class="row">
@@ -70,6 +80,7 @@
             <div class="col">col</div>
             <div class="col">col</div>
         </div>
+
         <hr>
 
         <!--Ejemplo 6-->
@@ -78,12 +89,14 @@
         <div class="row">
             <!--cuando el viewport esté mediano, desde ese tamaño para arriba
             la columna medirá 8 y la otra 4, pero si se encuentra en una medida
-            menor a la definida ocuapará el 100% cada columna-->
+            menor a la definida ocupará el 100% cada columna-->
             <div class="col-md-8">col-md-8</div>
             <div class="col-md-4">col-md-4</div>
           </div>
         
-        <!--Si quisieramos especificar un tamaño extra small
+        <!--
+        Nota: 
+        Si quisieramos especificar un tamaño extra small
         No podemos especificar en BTv4 el tamaño xs porque es el que se define 
         por defecto, y al no tener un tamaño definido va a tomar el 100% de su 
         elemento padre. Y al partir del tamaño small ya hay una medida definida 
@@ -91,23 +104,27 @@
         definido.-->
 
         <hr>
+
         <!--Ejemplo 7-->
         <h5>Ejemplo 7</h5>
-        <!--Las 3 columnas se dividirán el espacio que tiene su padre equitativamente-->
+        <!--
+        Las 3 columnas se dividirán el espacio que tiene su padre equitativamente
+        -->
         <div class="row">
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
+            <div class="col-md">col-sm</div>
+            <div class="col-md">col-sm</div>
+            <div class="col-md">col-sm</div>
         </div>
+
         <HR></HR>
         
         <!--Ejemplo 8-->
         <h5>Ejemplo 8</h5>
-        <!--MULTIPLES RESOLUCIONES1
+        <!--MULTIPLES RESOLUCIONES
         Vamos a crear una estructura básica donde vamos a poder especificar multiples
-        clases que se van a adaptar a las multiples resoluciones
+        clases que se van a adaptar a las multiples resoluciones,
         vamos a especificar para un tamaño small que cada elemento ocupe 12 columnas
-        para el small que ocupe 6etc-->
+        para el small que ocupe etc-->
 
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> col 1 </div>
@@ -125,21 +142,18 @@
         </div>
         <!--ahora tenemos 12 elementos cada uno con una clase que va a definir un 
             ancho para cada resolucion-->
-        <!-- y es así com BT nos ayuda a potenciar el desarrollo web trabajando 
-            con la filosofia
-        Mobile First-->
+        <!-- Es de ésta manera como BT nos ayuda a potenciar el desarrollo web trabajando 
+            con la filosofia Mobile First-->
 
 
 
-
-
-
+            
 
     </div>
 
     <br><br><br>
     <footer style="background: rgb(66, 66, 66); height: 150px; color: white;">
-        <h6 style="margin: 10px 0 0 40px;">Programación Web</h6>
+        <h6 style="margin: 10px 0 0 40px;">Hoy el viento lo vi libre y ..</h6>
     </footer>
 </body>
 
